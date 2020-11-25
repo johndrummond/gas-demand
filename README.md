@@ -1,7 +1,43 @@
-gas-demand
+Estimation of gas demand
 ==============================
 
-A gas demand prediction time series test with weather
+This project is a gas demand prediction time series test with weather from [emailed specification](references/Problem_Specification.md) and [dataset](data/raw/weather_and_gas_demand_historic_actuals.csv)
+
+Predictions were made for year 2018 initially on a daily frequency
+
+## To Use
+
+### Exploration and cleansing
+
+Read the  [commentary on exploring the data](references/Work_Done_Summary.md) 
+
+Review the [data exploration notebook](notebooks/Exploratory_Analysis.ipynb) or the [html version](reports/Exploratory_Analysis.html) of it
+
+### Prediction
+
+There is a markdown  [commentary on the prediction](references/Forecasting.md)
+
+And a [notebook exploring the prediction](notebooks/forecasting.ipynb) along with an [HTML instance](reports/forecasting.html)
+
+### Running locally
+
+Clone the repository locally. Note this was developed on Ubuntu 20 using Windows WSL and should work on any Linux
+
+This command from the project root will convert the initial CSV file into the processed data file, imputing missing values:
+
+`python src/data/make_dataset.py data/raw/weather_and_gas_demand_historic_actuals.csv data/processed/gas_demand.pkl`
+
+The  notebooks could be run through the local Jupyter server.
+
+
+
+
+
+
+
+
+
+
 
 Project Organization
 ------------
@@ -14,8 +50,6 @@ Project Organization
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
@@ -48,8 +82,7 @@ Project Organization
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    
 
 
 --------
