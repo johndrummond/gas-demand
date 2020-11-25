@@ -36,7 +36,7 @@ def main(input_filepath, output_filepath):
     gas_src = gas_src.apply(lambda x: x.interpolate(method='time'), axis=0)
 
     # save processed dataset read for forecasting
-    gas_src.to_feather(output_filepath)
+    gas_src.to_pickle(output_filepath)
 
 
 if __name__ == '__main__':
