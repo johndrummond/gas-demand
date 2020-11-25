@@ -11,13 +11,13 @@ Predictions were made for year 2018 initially on a daily frequency
 
 Read the  [commentary on exploring the data](references/Work_Done_Summary.md) 
 
-Review the [data exploration notebook](notebooks/Exploratory_Analysis.ipynb) or the [html version](reports/Exploratory_Analysis.html) of it
+Review the [data exploration notebook](notebooks/Exploratory_Analysis.ipynb) 
 
 ### Prediction
 
 There is a markdown  [commentary on the prediction](references/Forecasting.md)
 
-And a [notebook exploring the prediction](notebooks/forecasting.ipynb) along with an [HTML instance](reports/forecasting.html)
+And a [notebook exploring the prediction](notebooks/forecasting.ipynb) 
 
 ### Running locally
 
