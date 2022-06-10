@@ -20,7 +20,7 @@ click==7.1.2
 cmdstanpy==0.9.5
 colorama==0.4.4
 convertdate==2.3.0
-cookiecutter==1.7.2
+cookiecutter==2.1.1
 cycler==0.10.0
 Cython==0.29.21
 decorator==4.4.2
