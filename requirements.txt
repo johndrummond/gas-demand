@@ -107,7 +107,7 @@ setuptools-git==1.2
 six==1.15.0
 sklearn==0.0
 smmap==3.0.4
-streamlit==0.71.0
+streamlit==1.11.1
 tabulate==0.8.7
 terminado==0.9.1
 testpath==0.4.4
